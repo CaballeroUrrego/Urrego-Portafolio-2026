@@ -58,3 +58,15 @@
   bottom: 110px;
   background-color: #d14836;
 }
+/* Estilos personalizados para la sección de habilidades */
+#habilidades .habilidad-icon {
+  width: 50px; /* Ancho de las imágenes */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin: 10px; /* Margen alrededor de las imágenes */
+  transition: transform 0.3s ease; /* Transición suave para el efecto de desplazamiento */
+}
+#habilidades .habilidad-icon:hover {
+  transform: scale(
+    1.1
+  ); /* Efecto de agrandamiento al pasar el ratón por encima */
+}
