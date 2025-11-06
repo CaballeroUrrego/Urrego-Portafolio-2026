@@ -88,8 +88,10 @@ a:hover {
   background-color: #252525 !important;
 }
 .card {
-  background-color: #2e2e2e;
-  border: 1px solid #444;
+  background-color: #2b2b2b;
+  border: 1px solid #3a3a3a;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
   color: #fff;
 }
 footer {
@@ -115,4 +117,11 @@ h3.card-title {
 
 .list-group-item strong {
   color: #fff;
+}
+.navbar-dark.bg-dark {
+  background-color: rgba(37, 37, 37, 0.8) !important;
+  -webkit-backdrop-filter: blur(
+    10px
+  ); /* compatibilidad para navegadores WebKit */
+  backdrop-filter: blur(10px);
 }
