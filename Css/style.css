@@ -189,78 +189,90 @@ body {
   );
   box-shadow: 0 -8px 25px rgba(255, 111, 97, 0.2);
 }
-/* Botón de CV */
-.btn-cv {
-  background-color: #531415;
-  color: #fff;
-  border: 1.5px solid #531415;
-  padding: 6px 14px;
+/* ===== Contenedor de botones ===== */
+.btn-group-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Permite que bajen si no hay espacio */
+}
+
+/* ===== Botón base ===== */
+.btn-cv,
+.btn-linkedin,
+.btn-github {
+  padding: 8px 18px;
   border-radius: 25px;
   font-weight: 500;
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  min-width: 140px;
 }
 
+/* ===== Botón CV ===== */
+.btn-cv {
+  background-color: #531415;
+  color: #fff;
+  border: 1.5px solid #531415;
+}
 .btn-cv:hover {
   background-color: transparent;
   color: #531415;
   transform: scale(1.05);
 }
 
-/* Botón LinkedIn */
+/* ===== Botón LinkedIn ===== */
 .btn-linkedin {
   background-color: #531415;
   color: #fff;
   border: 1.5px solid #531415;
-  padding: 6px 14px;
-  border-radius: 25px;
-  font-weight: 500;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
 }
-
 .btn-linkedin:hover {
   background-color: transparent;
   color: #531415;
   transform: scale(1.05);
 }
 
-/* Botón GitHub */
+/* ===== Botón GitHub ===== */
 .btn-github {
   background-color: transparent;
   color: #531415;
   border: 1.5px solid #531415;
-  padding: 6px 14px;
-  border-radius: 25px;
-  font-weight: 500;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
 }
-
 .btn-github:hover {
   background-color: #531415;
   color: #fff;
   transform: scale(1.05);
 }
 
-/* Iconos */
+/* ===== Iconos ===== */
 .btn-cv i,
 .btn-linkedin i,
 .btn-github i {
   font-size: 0.95rem;
+}
+
+/* ===== Media query: móviles ===== */
+@media (max-width: 576px) {
+  .btn-group-custom {
+    flex-direction: column; /* Botones uno debajo del otro */
+    gap: 10px;
+  }
+
+  .btn-cv,
+  .btn-linkedin,
+  .btn-github {
+    width: 80%; /* Ocupan más ancho en móvil */
+    max-width: 250px;
+    justify-content: center;
+  }
 }
