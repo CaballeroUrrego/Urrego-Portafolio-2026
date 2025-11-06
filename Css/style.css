@@ -147,3 +147,9 @@ h3.card-title {
 body {
   background: linear-gradient(180deg, #1f1f1f 0%, #131313 100%);
 }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 111, 97, 0.2);
+  border-color: rgba(255, 111, 97, 0.3);
+  transition: all 0.3s ease-in-out;
+}
