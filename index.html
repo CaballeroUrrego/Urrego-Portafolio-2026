@@ -454,6 +454,20 @@
     >
       <i class="fa fa-whatsapp"></i>
     </a>
+<script>
+  // Detecta si el usuario entra desde un móvil
+  if (window.innerWidth <= 768) {
+    window.addEventListener("load", () => {
+      // Espera medio segundo y luego hace scroll suave a "Sobre mí"
+      setTimeout(() => {
+        document.querySelector("#navbarNav").scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }, 500);
+    });
+  }
+</script>
 
     <footer class="footer-custom text-center py-3">
       <p class="mb-0">

@@ -335,3 +335,97 @@ body {
     font-size: 1rem;
   }
 }
+/* === Sección de Presentación === */
+.presentacion {
+  text-align: center;
+  margin-top: 80px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Título principal */
+.titulo-principal {
+  font-weight: 700;
+  color: #531415;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  animation: fadeInDown 1.5s ease-in-out;
+}
+
+.titulo-principal span {
+  color: #a32c2d;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.titulo-principal span:hover {
+  color: #d04b4c;
+  transform: scale(1.05);
+}
+
+/* Subtítulo */
+.subtitulo {
+  font-size: 1.3rem;
+  color: #333;
+  line-height: 1.6;
+  animation: slideUp 1.5s ease-in-out;
+  animation-delay: 0.3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.subtitulo .rol {
+  color: #a32c2d;
+  font-weight: 600;
+}
+
+.subtitulo .tecnico {
+  color: #a32c2d;
+  font-weight: 600;
+}
+
+.subtitulo .ubicacion {
+  color: #25d366;
+  font-weight: 600;
+}
+
+/* === Animaciones === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 2rem;
+  }
+
+  .subtitulo {
+    font-size: 1.1rem;
+  }
+}
