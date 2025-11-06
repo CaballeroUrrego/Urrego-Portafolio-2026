@@ -121,9 +121,29 @@ h3.card-title {
   color: #fff;
 }
 .navbar-dark.bg-dark {
-  background-color: rgba(37, 37, 37, 0.8) !important;
-  -webkit-backdrop-filter: blur(
-    10px
-  ); /* compatibilidad para navegadores WebKit */
+  background: linear-gradient(
+    135deg,
+    rgba(83, 20, 21, 0.85) 0%,
+    rgba(37, 37, 37, 0.85) 100%
+  ) !important;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.navbar-dark .nav-link {
+  color: #f5f5f5;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-dark .nav-link:hover {
+  color: #ff6f61; /* Un tono vino más claro o rosado */
+  text-shadow: 0 0 5px rgba(255, 111, 97, 0.8);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+body {
+  background: linear-gradient(180deg, #1f1f1f 0%, #131313 100%);
 }
