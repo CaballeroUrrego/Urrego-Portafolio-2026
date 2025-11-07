@@ -732,3 +732,32 @@ body {
     font-size: 1.2rem;
   }
 }
+/* ===== ICONOS DE HABILIDADES ===== */
+.habilidad-icon {
+  width: 55px; /* tamaño del icono */
+  height: 55px;
+  margin: 10px;
+  filter: brightness(0.9);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUpIcon 0.8s ease forwards;
+}
+
+/* Animación de aparición */
+@keyframes fadeUpIcon {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== EFECTO AL PASAR EL CURSOR ===== */
+.habilidad-icon:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px #531415) brightness(1.2);
+  transition: all 0.3s ease;
+}
