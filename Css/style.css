@@ -608,3 +608,44 @@ body {
     font-size: 1.1rem;
   }
 }
+/* ===== TÍTULO CENTRADO DE SECCIÓN EXPERIENCIA ===== */
+.experiencia h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  position: relative;
+  display: inline-block;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Línea decorativa inferior */
+.experiencia h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #531415;
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Centrar el bloque del título */
+.experiencia {
+  text-align: center;
+}
+
+/* Animación suave */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
