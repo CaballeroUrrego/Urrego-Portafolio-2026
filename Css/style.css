@@ -756,6 +756,11 @@ body {
 }
 
 /* ===== EFECTO AL PASAR EL CURSOR ===== */
+/*
+*Ojo este es el que hace el efecto de abajo 
+*
+*/
+
 .habilidad-icon:hover {
   transform: scale(1.2);
   filter: drop-shadow(0 0 10px #531415) brightness(1.2);
