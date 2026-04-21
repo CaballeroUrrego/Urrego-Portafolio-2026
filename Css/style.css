@@ -173,70 +173,61 @@ h3.card-title {
   font-weight: 600;
 }
 
-/* ===== BOTONES (CV, LinkedIn, GitHub) ===== */
+/* ===== CONTENEDOR DE BOTONES ===== */
 .btn-group-custom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin-top: 25px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
+    flex-wrap: wrap;
 }
 
-.btn-cv,
+/* ===== ESTILO BASE DE BOTONES ===== */
 .btn-linkedin,
+.btn-github,
+.btn-cv {
+    padding: 10px 22px;
+    border-radius: 10px; /* Bordes ligeramente redondeados según la imagen */
+    font-weight: 800;    /* Fuente gruesa para resaltar */
+    font-size: 0.95rem;
+    text-transform: none; /* Mantener mayúsculas/minúsculas naturales */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    border: none;
+}
+
+/* BOTONES CON DEGRADADO AZUL (LinkedIn y CV) */
+.btn-linkedin,
+.btn-cv {
+    background: linear-gradient(135deg, #2563eb 0%, #38bdf8 100%);
+    color: #ffffff !important;
+    /* El brillo sutil alrededor del botón */
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
+
+.btn-linkedin:hover,
+.btn-cv:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
+    filter: brightness(1.1);
+}
+
+/* BOTÓN GITHUB (Estilo Dark con Borde sutil) */
 .btn-github {
-  padding: 10px 22px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-  min-width: 150px;
-}
-
-/* Botón Primario (CV & LinkedIn) */
-.btn-cv,
-.btn-linkedin {
-  background: linear-gradient(135deg, #2563eb, #3b82f6);
-  color: #fff;
-  border: 1px solid transparent;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-}
-
-.btn-cv:hover,
-.btn-linkedin:hover {
-  background: transparent;
-  border: 1px solid #3b82f6;
-  color: #38bdf8;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(56, 189, 248, 0.2);
-}
-
-/* Botón Secundario (GitHub) */
-.btn-github {
-  background-color: transparent;
-  color: #cbd5e1;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: #1e293b;
+    color: #cbd5e1 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .btn-github:hover {
-  background-color: #1e293b;
-  border-color: #38bdf8;
-  color: #38bdf8;
-  transform: translateY(-2px);
-}
-
-.btn-cv i,
-.btn-linkedin i,
-.btn-github i {
-  font-size: 1rem;
+    border-color: #38bdf8;
+    color: #38bdf8 !important;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
 }
 
 @media (max-width: 576px) {
