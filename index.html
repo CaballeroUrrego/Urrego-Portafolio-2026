@@ -1,399 +1,646 @@
 <!doctype html>
 <html lang="es">
+  <head>
+    <!-- Configuración de codificación y vista responsiva -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <!-- Configuración de codificación y vista responsiva -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título de la pestaña del navegador -->
+    <title>Sebastian Urrego - Portafolio</title>
 
-  <!-- Título de la pestaña del navegador -->
-  <title>Sebastian Urrego - Portafolio</title>
+    <!-- Descripción para motores de búsqueda -->
+    <meta
+      name="description"
+      content="Portafolio profesional de Sebastian Urrego, estudiante de desarrollo de software con experiencia en soporte técnico, seguridad informática y tecnologías web."
+    />
 
-  <!-- Descripción para motores de búsqueda -->
-  <meta name="description"
-    content="Portafolio profesional de Sebastian Urrego, estudiante de desarrollo de software con experiencia en soporte técnico, seguridad informática y tecnologías web." />
+    <!-- Bootstrap CSS para estilos prediseñados -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Bootstrap CSS para estilos prediseñados -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Hoja de estilos personalizada -->
+    <link rel="stylesheet" href="/css/style.css" />
 
-  <!-- Hoja de estilos personalizada -->
-  <link rel="stylesheet" href="/css/style.css" />
+    <!-- Icono de la pestaña (favicon) -->
+    <link rel="icon" href="img/Sebastian.png" />
 
-  <!-- Icono de la pestaña (favicon) -->
-  <link rel="icon" href="img/Sebastian.png" />
+    <!-- Font Awesome para iconos -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-  <!-- Font Awesome para iconos -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-</head>
-
-<body>
-  <!-- Barra de navegación superior fija -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <!-- Nombre o logo de la marca -->
-      <a class="navbar-brand" href="#">Sebastian Urrego Cardenas </a>
-      <!-- Botón para menú colapsable en móviles -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Enlaces de navegación -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#sobremi">Sobre mí </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experiencia">Experiencia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#cursos">Cursos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#formacion">Formación</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Sección: Sobre mí -->
-  <section id="sobremi" class="py-5 bg-light mt-5">
-    <div class="container">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
-          <div class="sobre-mi-imagen">
-            <img src="img/Sebas.jpg" alt="Foto de perfil" class="img-fluid" style="width: 100%; max-width: 320px" />
-          </div>
-        </div>
-        <!-- Información personal y enlaces -->
-        <div class="col-12 col-md-8 presentacion text-center text-md-start">
-          <h1 class="titulo-principal">
-            ¡Bienvenidos! Soy <span>Sebastián Urrego</span>
-          </h1>
-          <p class="subtitulo">
-            <span class="rol">Desarrollador de software</span><br />
-            <span class="tecnico">Técnico en sistemas</span><br />
-            <span class="ubicacion">De Medellín, Colombia</span>
-          </p>
-          <div class="btn-group-custom justify-content-center justify-content-md-start mt-4">
-            <!-- Botón LinkedIn -->
-            <a href="https://www.linkedin.com/in/sebastian-urrego-cardenas-5a205a1a5/" class="btn btn-linkedin me-2"
-              target="_blank" rel="noopener noreferrer">
-              <i class="fa fa-linkedin"></i> LinkedIn
-            </a>
-            <!-- Botón GitHub -->
-            <a href="https://github.com/CaballeroUrrego" class="btn btn-github me-2" target="_blank"
-              rel="noopener noreferrer">
-              <i class="fa fa-github"></i> GitHub
-            </a>
-            <!-- Botón para descargar CV -->
-            <a href="/Doc/DocHoja_de_vida_Sebastian_Urrego.pdf" download="Hoja_de_vida_Sebastian_Urrego.pdf"
-              class="btn btn-cv">
-              <i class="fa fa-download"></i> Descargar CV
-            </a>
-          </div>
+  <body>
+    <!-- Barra de navegación superior fija -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <!-- Nombre o logo de la marca -->
+        <a class="navbar-brand" href="#">Sebastian Urrego Cardenas </a>
+        <!-- Botón para menú colapsable en móviles -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Enlaces de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#sobremi">Sobre mí </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#formacion">Formación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Sección: Experiencia laboral 1 -->
-  <section id="experiencia" class="experiencia py-5">
-    <div class="container">
-      <h2 class="text-center mb-5">Experiencia</h2>
-      <div class="row">
-        <!-- Tarjeta de experiencia 1 -->
-        <div class="col-md-6 mb-4">
-          <div class="card experiencia-card h-100">
-            <div class="card-body">
-              <h3 class="card-title text-center">SIMAC S.A.S</h3>
-              <p class="card-text">
-                  <span class="fw-bold">Tecnico en Sistemas</span><br>
-                Realicé
-                Gestión integral de la infraestructura tecnológica, asegurando la continuidad operativa y la integridad
-                de la información corporativa.<br>
-                <br>
-                • <strong>Gestión de Identidades:</strong> Administración de servidores Linux para la creación de
-                credenciales, gestión de permisos de carpetas y bajas de usuarios, garantizando la seguridad.<br>
-                • <strong>Seguridad de Datos:</strong> Diseño y ejecución de planes de Backup críticos y migración de
-                información en procesos de renovación tecnológica.<br>
-                • <strong>Virtualización y Software:</strong> Configuración de entornos aislados mediante VirtualBox y
-                despliegue automatizado de software corporativo.<br>
-                • <strong>Mantenimiento:</strong> Supervisión de hardware y software mediante mantenimientos preventivos
-                y correctivos bajo estándares de calidad.
-              </p>
-              <a href="https://simac.com.co" class="btn btn-outline-primary experiencia-btn" target="_blank"
-                rel="noopener noreferrer">Visitar SIMAC</a>
+    </nav>
+
+    <!-- Sección: Sobre mí -->
+    <section id="sobremi" class="py-5 bg-light mt-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+            <div class="sobre-mi-imagen">
+              <img
+                src="img/Sebas.jpg"
+                alt="Foto de perfil"
+                class="img-fluid"
+                style="width: 100%; max-width: 320px"
+              />
+            </div>
+          </div>
+          <!-- Información personal y enlaces -->
+          <div class="col-12 col-md-8 presentacion text-center text-md-start">
+            <h1 class="titulo-principal">
+              ¡Bienvenidos! Soy <span>Sebastián Urrego</span>
+            </h1>
+            <p class="subtitulo">
+              <span class="rol">Desarrollador de software</span><br />
+              <span class="tecnico">Técnico en sistemas</span><br />
+              <span class="ubicacion">De Medellín, Colombia</span>
+            </p>
+            <div
+              class="btn-group-custom justify-content-center justify-content-md-start mt-4"
+            >
+              <!-- Botón LinkedIn -->
+              <a
+                href="https://www.linkedin.com/in/sebastian-urrego-cardenas-5a205a1a5/"
+                class="btn btn-linkedin me-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa fa-linkedin"></i> LinkedIn
+              </a>
+              <!-- Botón GitHub -->
+              <a
+                href="https://github.com/CaballeroUrrego"
+                class="btn btn-github me-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa fa-github"></i> GitHub
+              </a>
+              <!-- Botón para descargar CV -->
+              <a
+                href="/Doc/DocHoja_de_vida_Sebastian_Urrego.pdf"
+                download="Hoja_de_vida_Sebastian_Urrego.pdf"
+                class="btn btn-cv"
+              >
+                <i class="fa fa-download"></i> Descargar CV
+              </a>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- Sección: Experiencia laboral 1 -->
+    <section id="experiencia" class="experiencia py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Experiencia</h2>
+        <div
+          id="experienciaCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators" style="bottom: -15px">
+            <button
+              type="button"
+              data-bs-target="#experienciaCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#experienciaCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#experienciaCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner pb-4">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <!-- Tarjeta de experiencia 1 -->
+                <div class="col-md-6 mb-4">
+                  <div class="card experiencia-card h-100">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title text-center">SIMAC S.A.S</h3>
+                      <p class="card-text">
+                        <span class="fw-bold">Tecnico en Sistemas</span><br />
+                        Realicé Gestión integral de la infraestructura
+                        tecnológica, asegurando la continuidad operativa y la
+                        integridad de la información corporativa.<br />
+                        <br />
+                        •
+                        <strong>Gestión de Identidades:</strong> Administración
+                        de servidores Linux para la creación de credenciales,
+                        gestión de permisos de carpetas y bajas de usuarios,
+                        garantizando la seguridad.<br />
+                        • <strong>Seguridad de Datos:</strong> Diseño y
+                        ejecución de planes de Backup críticos y migración de
+                        información en procesos de renovación tecnológica.<br />
+                        •
+                        <strong>Virtualización y Software:</strong>
+                        Configuración de entornos aislados mediante VirtualBox y
+                        despliegue automatizado de software corporativo.<br />
+                        • <strong>Mantenimiento:</strong> Supervisión de
+                        hardware y software mediante mantenimientos preventivos
+                        y correctivos bajo estándares de calidad.
+                      </p>
+                      <a
+                        href="https://simac.com.co"
+                        class="btn btn-outline-primary experiencia-btn mt-auto"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Visitar SIMAC</a
+                      >
+                    </div>
+                  </div>
+                </div>
 
-        <!-- Tarjeta de experiencia 2 -->
-        <div class="col-md-6 mb-4">
-          <div class="card experiencia-card h-100">
-            <div class="card-body">
-              <h3 class="card-title text-center">ALGAR TECH</h3>
-              <p class="card-text">
-<span class="fw-bold">Agente de Soporte Técnico</span><br>
-                Realicé servicios de atención técnica en modalidades presencial y virtual, garantizando la operatividad
-                de los usuarios finales y el cumplimiento de estándares corporativos.<br>
-                <br>
-                <span class="fw-bold">Gestión y Control de Activos:</span><br>
-                <strong>• Responsable de la administración</strong> y trazabilidad de inventarios de hardware.<br>
-                <strong>• Monitoreo de asignaciones</strong> de equipos para asegurar el control de activos y la
-                ubicación precisa de recursos tecnológicos por usuario.<br>
-                <strong>• Soporte técnico multiplataforma</strong> para cuentas globales, optimizando los tiempos de
-                respuesta y resolución.
-              </p><br><br><br>
-              <a href="https://algartech.com/es/" class="btn btn-outline-primary experiencia-btn" target="_blank"
-                rel="noopener noreferrer">Visitar Algar.tech</a>
+                <!-- Tarjeta de experiencia 2 -->
+                <div class="col-md-6 mb-4">
+                  <div class="card experiencia-card h-100">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title text-center">ALGAR TECH</h3>
+                      <p class="card-text">
+                        <span class="fw-bold">Agente de Soporte Técnico</span
+                        ><br />
+                        Realicé servicios de atención técnica en modalidades
+                        presencial y virtual, garantizando la operatividad de
+                        los usuarios finales y el cumplimiento de estándares
+                        corporativos.<br />
+                        <br />
+                        <span class="fw-bold"
+                          >Gestión y Control de Activos:</span
+                        ><br />
+                        <strong>• Responsable de la administración</strong> y
+                        trazabilidad de inventarios de hardware.<br />
+                        <strong>• Monitoreo de asignaciones</strong> de equipos
+                        para asegurar el control de activos y la ubicación
+                        precisa de recursos tecnológicos por usuario.<br />
+                        <strong>• Soporte técnico multiplataforma</strong> para
+                        cuentas globales, optimizando los tiempos de respuesta y
+                        resolución.
+                      </p>
+                      <a
+                        href="https://algartech.com/es/"
+                        class="btn btn-outline-primary experiencia-btn mt-auto"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Visitar Algar.tech</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <!-- Tarjeta de experiencia 3 -->
+                <div class="col-md-6 mb-4">
+                  <div class="card experiencia-card h-100">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title text-center">IBM (Algar Tech)</h3>
+                      <p class="card-text">
+                        <span class="fw-bold">Agente de Soporte Técnico</span
+                        ><br />
+                        Ejecución técnica de un proyecto de cifrado para el
+                        Banco de Bogotá, asegurando la protección de activos
+                        críticos de la entidad.<br />
+                        <br />
+                        • <strong>Cifrado de Datos:</strong> Implementación de
+                        protocolos de seguridad en discos duros para garantizar
+                        la integridad de la información bancaria.<br />
+                        • <strong>Gestión vía CLI (CMD):</strong> Uso de la
+                        interfaz de línea de comandos para la configuración y
+                        despliegue de políticas de seguridad locales.<br />
+                        • <strong>Cumplimiento de Estándares:</strong> Trabajo
+                        bajo estrictas normativas de seguridad informática y
+                        protección de datos.
+                      </p>
+                      <a
+                        href="https://www.ibm.com/mx-es/about"
+                        class="btn btn-outline-primary experiencia-btn mt-auto"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Visitar IBM</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Tarjeta de experiencia 4 -->
+                <div class="col-md-6 mb-4">
+                  <div class="card experiencia-card h-100">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title text-center">
+                        Epayco - Davivienda
+                      </h3>
+                      <p class="card-text">
+                        <span class="fw-bold"
+                          >Tecnólogo en Desarrollo y Análisis de Software:</span
+                        ><br />
+                        Participe activamente en el desarrollo de soluciones
+                        técnicas para la gestión de datos y optimización de
+                        procesos transaccionales.
+                        <br /><br />
+                        • <strong>Automatización con Python:</strong> Creación
+                        de scripts utilizando <strong>Pandas</strong> para la
+                        generación de reportes, logrando una
+                        <strong>reducción del 60% en tiempos</strong> de
+                        procesamiento.<br />
+                        • <strong>Análisis de Datos:</strong> Diseño y ejecución
+                        de consultas avanzadas en
+                        <strong>SQL (MySQL)</strong> para el análisis de
+                        transacciones masivas y segmentación.<br />
+                        •
+                        <strong>Seguridad y Configuración:</strong>
+                        Implementación de integraciones seguras mediante el uso
+                        de <strong>variables de entorno</strong> para la
+                        protección de credenciales de acceso.<br />
+                        • <strong>Apoyo Estratégico:</strong> Colaboración
+                        técnica con los equipos de marketing y tecnología para
+                        facilitar la toma de decisiones basada en datos.
+                      </p>
+                      <a
+                        href="https://epayco.com/nosotros/"
+                        class="btn btn-outline-primary experiencia-btn mt-auto"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Visitar Epayco
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="row">
+                <!-- Tarjeta de experiencia 5 -->
+                <div class="col-md-6 mb-4">
+                  <div class="card experiencia-card h-100">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title text-center">
+                        Teleperformance / Liberty PR
+                      </h3>
+                      <p class="card-text">
+                        <span class="fw-bold"
+                          >Soporte Técnico Especializado (Nivel 3):</span
+                        ><br />
+                        Resolución de incidencias críticas y escalamientos
+                        complejos, actuando como última instancia técnica para
+                        clientes corporativos y residenciales.
+                        <br /><br />
+                        • <strong>Análisis y Diagnóstico:</strong> Gestión de
+                        casos de alta complejidad en servicios de
+                        telecomunicaciones mediante herramientas de diagnóstico
+                        remoto.<br />
+                        • <strong>Documentación Técnica:</strong> Creación de
+                        soluciones para la base de conocimiento interna,
+                        facilitando procesos de resolución para agentes de
+                        niveles 1 y 2.<br />
+                        • <strong>Habilidades Consultivas:</strong> Resolución
+                        de conflictos en facturación y servicios bajo estrictas
+                        métricas de calidad y satisfacción .
+                      </p>
+                      <a
+                        href="https://www.libertybusinesspr.com/sobre-nosotros/"
+                        class="btn btn-outline-primary experiencia-btn mt-auto"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Visitar Liberty
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Tarjeta de experiencia 6  Modificar -->
+                <div class="col-md-6 mb-4">
+                  <div class="card experiencia-card h-100">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title text-center">Hogar & Tendencias</h3>
+                      <p class="card-text">
+                        <span class="fw-bold"
+                          >Desarrollador Freelancer (Pyme)</span
+                        ><br />
+                        Lideré la transformación digital de un negocio de
+                        mobiliario, integrando soluciones de desarrollo web y
+                        marketing digital.
+                        <br /><br />
+                        • <strong>Desarrollo Frontend:</strong> Diseño y
+                        despliegue de sitio web utilizando
+                        <strong>HTML5, CSS3 y JavaScript</strong>, optimizado
+                        para dispositivos móviles y desplegado mediante
+                        <strong>Netlify</strong>.<br />
+                        • <strong>Estrategia Digital:</strong> Gestión de marca
+                        en Instagram y creación de contenido
+                        audiovisual,mejorando la visibilidad del catálogo de
+                        productos.<br />
+                        •
+                        <strong>Soluciones Tecnológicas:</strong> Implementación
+                        de flujos de trabajo digitales para mejorar la
+                        comunicación directa con clientes vía WhatsApp.<br />
+                        • <strong>Diseño UX/UI:</strong> Creación de layouts
+                        modernos centrados en la experiencia del usuario para
+                        facilitar la navegación y conversión.
+                      </p>
+                      <a
+                        href="https://hogarytendencias.netlify.app"
+                        class="btn btn-outline-primary experiencia-btn mt-auto"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Visitar Proyecto
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#experienciaCarousel"
+            data-bs-slide="prev"
+            style="
+              width: 50px;
+              left: -60px;
+              justify-content: center;
+              align-items: center;
+              opacity: 1;
+            "
+          >
+            <i
+              class="fa fa-chevron-left"
+              style="font-size: 2.5rem; color: #38bdf8"
+            ></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#experienciaCarousel"
+            data-bs-slide="next"
+            style="
+              width: 50px;
+              right: -60px;
+              justify-content: center;
+              align-items: center;
+              opacity: 1;
+            "
+          >
+            <i
+              class="fa fa-chevron-right"
+              style="font-size: 2.5rem; color: #38bdf8"
+            ></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Formación y cursos -->
+    <section id="formacion" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Formación y Cursos</h2>
+        <div class="row">
+          <!-- Formación académica -->
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">Formación Académica</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <strong>Bachillerato Académico</strong> - Instituto Norte –
+                    La Estrella (2019)
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Técnica en Sistemas</strong> - Sena La Salada – La
+                    Estrella (2021)
+                  </li>
+                  <li class="list-group-item">
+                    <strong>
+                      Tecnologo en Análisis y Desarrollo de Software</strong
+                    >
+                    -Sena Itagui Calatrava(2025)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Cursos y certificaciones -->
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">Cursos y Certificaciones</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <strong>Técnico en Seguridad Informática</strong> -
+                    Capacítate para el empleo (2020)
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Prácticas de Ofimática</strong> - Capacítate para el
+                    empleo (2020)
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Curso Inglés Básico Nivel 1</strong>
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Bancarización y Ciberseguridad</strong>
+                  </li>
+                  <li class="list-group-item">
+                    <strong
+                      >Email Marketing y Mensajería Móvil Instantánea</strong
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <strong
+                      >Herramientas de Gestión de Relacionamiento con el
+                      Cliente</strong
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Marketing en Redes Sociales y Analítica Web</strong>
+                  </li>
+                  <li class="list-group-item">
+                    <strong
+                      >Servicio de Atención al Cliente por Teléfono</strong
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <strong
+                      >Scrum Foundation Professional Certification
+                      (SFPC)</strong
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Python Esencial</strong>
+                  </li>
+                  <li class="list-group-item">
+                    <strong
+                      >Desarrollo de Aplicaciones Web en Tiempo Real con
+                      JavaScript y Node.js</strong
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-  <!-- Tarjeta de experiencia 3 -->
-     <div class="col-md-6 mb-4">
-  <div class="card experiencia-card h-100">
-    <div class="card-body">
-      <h3 class="card-title text-center">IBM (Algar Tech)</h3>
-      <p class="card-text">
-        <span class="fw-bold">Agente de Soporte Técnico</span><br>
-        Ejecución técnica de un proyecto de cifrado para el Banco de Bogotá, asegurando la protección de activos críticos de la entidad.<br>
-        <br>
-        • <strong>Cifrado de Datos:</strong> Implementación de protocolos de seguridad en discos duros para garantizar la integridad de la información bancaria.<br>
-        • <strong>Gestión vía CLI (CMD):</strong> Uso de la interfaz de línea de comandos para la configuración y despliegue de políticas de seguridad locales.<br>
-        • <strong>Cumplimiento de Estándares:</strong> Trabajo bajo estrictas normativas de seguridad informática y protección de datos.
-      </p><br><br><br><br><br><br>
-      <a href="https://www.ibm.com/mx-es/about" class="btn btn-outline-primary experiencia-btn" target="_blank" rel="noopener noreferrer">Visitar IBM</a>
-    </div>
-  </div>
-</div>
-<!-- Tarjeta de experiencia 4 -->
-      <div class="col-md-6 mb-4">
-  <div class="card experiencia-card h-100">
-    <div class="card-body">
-      <h3 class="card-title text-center">Epayco - Davivienda</h3>
-      <p class="card-text">
-        <span class="fw-bold">Tecnólogo en Desarrollo y Análisis de Software:</span><br>
-        Participe activamente en el desarrollo de soluciones técnicas para la gestión de datos y optimización de procesos transaccionales.
-        <br><br>
-        • <strong>Automatización con Python:</strong> Creación de scripts utilizando <strong>Pandas</strong> para la generación de reportes, logrando una <strong>reducción del 60% en tiempos</strong> de procesamiento.<br>
-        • <strong>Análisis de Datos:</strong> Diseño y ejecución de consultas avanzadas en <strong>SQL (MySQL)</strong> para el análisis de transacciones masivas y segmentación.<br>
-        • <strong>Seguridad y Configuración:</strong> Implementación de integraciones seguras mediante el uso de <strong>variables de entorno</strong> para la protección de credenciales de acceso.<br>
-        • <strong>Apoyo Estratégico:</strong> Colaboración técnica con los equipos de marketing y tecnología para facilitar la toma de decisiones basada en datos.
+      </div>
+    </section>
+    <!-- Sección: Habilidades técnicas -->
+    <section id="habilidades" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="text-center mb-5">Habilidades Técnicas</h2>
+
+        <!-- Lenguajes y Tecnologías -->
+        <h3 class="habilidades-subtitulo">Lenguajes y Tecnologías</h3>
+        <div class="habilidades-grupo">
+          <img src="img/css_old.svg" alt="CSS" class="habilidad-icon" />
+          <img
+            src="img/javascript.svg"
+            alt="JavaScript"
+            class="habilidad-icon"
+          />
+          <img
+            src="img/typescript.svg"
+            alt="TypeScript"
+            class="habilidad-icon"
+          />
+          <img src="img/nodejs.svg" alt="Node.js" class="habilidad-icon" />
+          <img src="img/Php_light.svg" alt="PHP" class="habilidad-icon" />
+          <img src="img/python.svg" alt="Python" class="habilidad-icon" />
+          <img
+            src="img/sql-server.svg"
+            alt="SQL Server"
+            class="habilidad-icon"
+          />
+          <img
+            src="img/mysql-icon-dark.svg"
+            alt="MySQL"
+            class="habilidad-icon"
+          />
+          <img
+            src="img/mongodb-icon-dark.svg"
+            alt="MongoDB"
+            class="habilidad-icon"
+          />
+          <img src="img/bootstrap.svg" alt="Bootstrap" class="habilidad-icon" />
+          <img
+            src="img/astro-icon-dark.svg"
+            alt="Astro"
+            class="habilidad-icon"
+          />
+        </div>
+
+        <!-- Herramientas y Entornos -->
+        <h3 class="habilidades-subtitulo">Herramientas y Entornos</h3>
+        <div class="habilidades-grupo">
+          <img src="img/git.svg" alt="Git" class="habilidad-icon" />
+          <img src="img/Github_light.svg" alt="GitHub" class="habilidad-icon" />
+          <img src="img/cursor_dark.svg" alt="Cursor" class="habilidad-icon" />
+          <img src="img/vscode.svg" alt="VS Code" class="habilidad-icon" />
+          <img
+            src="img/visual-studio.svg"
+            alt="Visual Studio"
+            class="habilidad-icon"
+          />
+          <img src="img/figma.svg" alt="Figma" class="habilidad-icon" />
+          <img src="img/slack.svg" alt="Slack" class="habilidad-icon" />
+          <img src="img/microsoft.svg" alt="Microsoft" class="habilidad-icon" />
+          <img
+            src="img/microsoft-teams.svg"
+            alt="Microsoft Teams"
+            class="habilidad-icon"
+          />
+          <img
+            src="img/microsoft-onedrive.svg"
+            alt="OneDrive"
+            class="habilidad-icon"
+          />
+          <img src="img/ibm.svg" alt="IBM" class="habilidad-icon" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Botón flotante para enviar correo Gmail -->
+    <a
+      href="mailto:urregosebastian462@gmail.com?subject=Consulta&body=Hola,%20quisiera%20más%20información."
+      class="gmail fab"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fa fa-envelope"></i>
+    </a>
+
+    <!-- Botón flotante para WhatsApp -->
+    <a
+      href="https://wa.link/cwnsxu"
+      class="whatsapp fab"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fa fa-whatsapp"></i>
+    </a>
+
+    <footer class="footer-custom text-center py-3">
+      <p class="mb-0">
+        © 2026 <strong>Sebastian Urrego</strong>. Todos los derechos reservados.
       </p>
-      <a href="https://epayco.com/nosotros/" class="btn btn-outline-primary experiencia-btn" target="_blank" rel="noopener noreferrer">
-        Visitar Epayco
-      </a>
-    </div>
-  </div>
-</div>
-<!-- Tarjeta de experiencia 5 -->
-    <div class="col-md-6 mb-4">
-  <div class="card experiencia-card h-100">
-    <div class="card-body">
-      <h3 class="card-title text-center">Teleperformance / Liberty PR</h3>
-      <p class="card-text">
-        <span class="fw-bold">Soporte Técnico Especializado (Nivel 3):</span><br>
-        Resolución de incidencias críticas y escalamientos complejos, actuando como última instancia técnica para clientes corporativos y residenciales.
-        <br><br>
-        • <strong>Análisis y Diagnóstico:</strong> Gestión de casos de alta complejidad en servicios de telecomunicaciones mediante herramientas de diagnóstico remoto.<br>
-        • <strong>Documentación Técnica:</strong> Creación de soluciones para la base de conocimiento interna, facilitando procesos de resolución para agentes de niveles 1 y 2.<br>
-        • <strong>Habilidades Consultivas:</strong> Resolución de conflictos en facturación y servicios bajo estrictas métricas de calidad y satisfacción .
-      </p><br><br>
-      <a href="https://www.libertybusinesspr.com/sobre-nosotros/" 
-         class="btn btn-outline-primary experiencia-btn" target="_blank" rel="noopener noreferrer">
-         Visitar Liberty
-      </a>
-    </div>
-  </div>
-</div>
-<!-- Tarjeta de experiencia 6  Modificar -->
-    <div class="col-md-6 mb-4">
-  <div class="card experiencia-card h-100">
-    <div class="card-body">
-      <h3 class="card-title text-center">Hogar & Tendencias</h3>
-      <p class="card-text">
-        <span class="fw-bold">Desarrollador Freelancer (Pyme)</span><br>
-        Lideré la transformación digital de un negocio  de mobiliario, integrando soluciones de desarrollo web y marketing digital.
-        <br><br>
-        • <strong>Desarrollo Frontend:</strong> Diseño y despliegue de sitio web utilizando <strong>HTML5, CSS3 y JavaScript</strong>, optimizado para dispositivos móviles y desplegado mediante <strong>Netlify</strong>.<br>
-        • <strong>Estrategia Digital:</strong> Gestión de marca en Instagram y creación de contenido audiovisual,mejorando la visibilidad del catálogo de productos.<br>
-        • <strong>Soluciones Tecnológicas:</strong> Implementación de flujos de trabajo digitales para mejorar la comunicación directa con clientes vía WhatsApp.<br>
-        • <strong>Diseño UX/UI:</strong> Creación de layouts modernos centrados en la experiencia del usuario para facilitar la navegación y conversión.
-      </p>
-      <a href="https://hogarytendencias.netlify.app" class="btn btn-outline-primary experiencia-btn" target="_blank" rel="noopener noreferrer">
-        Visitar Proyecto
-      </a>
-    </div>
-  </div>
-</div>
-    
-  </section>
+    </footer>
+    <!-- Bootstrap JS para funcionalidades interactivas -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Sección: Cursos -->
-  <section id="cursos" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-5">Cursos</h2>
-      <div class="row">
-        <!-- Cursos de interés -->
-        <div class="col-md-6">
-          <h3>De Interés</h3>
-          <p>
-            <span class="fw-bold">Instituto Norte La Estrella:</span>
-            Bachillerato Académico y Técnico en seguridad informática.
-          </p>
-        </div>
-        <!-- Otros cursos relevantes -->
-        <div class="col-md-6">
-          <h3>Puede ser de tu interés</h3>
-          <p>
-            Registro de información, elaboración de informes técnicos y
-            mantenimiento de equipos de cómputo.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección: Formación y cursos -->
-  <section id="formacion" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-5">Formación y Cursos</h2>
-      <div class="row">
-        <!-- Formación académica -->
-        <div class="col-md-6 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="card-title">Formación Académica</h3>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <strong>Bachillerato Académico</strong> - Instituto Norte –
-                  La Estrella (2019)
-                </li>
-                <li class="list-group-item">
-                  <strong>Técnica en Sistemas</strong> - Sena La Salada – La
-                  Estrella (2021)
-                </li>
-                <li class="list-group-item">
-                  <strong>
-                    Tecnologo en Análisis y Desarrollo de Software</strong>
-                  -Sena Itagui Calatrava(2025)
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- Cursos y certificaciones -->
-        <div class="col-md-6 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="card-title">Cursos y Certificaciones</h3>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <strong>Técnico en Seguridad Informática</strong> -
-                  Capacítate para el empleo (2020)
-                </li>
-                <li class="list-group-item">
-                  <strong>Prácticas de Ofimática</strong> - Capacítate para el
-                  empleo (2020)
-                </li>
-                <li class="list-group-item">
-                  <strong>Curso Inglés Básico Nivel 1</strong>
-                </li>
-                <li class="list-group-item">
-                  <strong>Bancarización y Ciberseguridad</strong>
-                </li>
-                <li class="list-group-item">
-                  <strong>Email Marketing y Mensajería Móvil Instantánea</strong>
-                </li>
-                <li class="list-group-item">
-                  <strong>Herramientas de Gestión de Relacionamiento con el
-                    Cliente</strong>
-                </li>
-                <li class="list-group-item">
-                  <strong>Marketing en Redes Sociales y Analítica Web</strong>
-                </li>
-                <li class="list-group-item">
-                  <strong>Servicio de Atención al Cliente por Teléfono</strong>
-                </li>
-                <li class="list-group-item">
-                  <strong>Scrum Foundation Professional Certification
-                    (SFPC)</strong>
-                </li>
-                <li class="list-group-item">
-                  <strong>Python Esencial</strong>
-                </li>
-                <li class="list-group-item">
-                  <strong>Desarrollo de Aplicaciones Web en Tiempo Real con
-                    JavaScript y Node.js</strong>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Sección: Habilidades técnicas -->
-  <section id="habilidades" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="text-center mb-5">Habilidades Técnicas</h2>
-
-      <!-- Lenguajes y Tecnologías -->
-      <h3 class="habilidades-subtitulo">Lenguajes y Tecnologías</h3>
-      <div class="habilidades-grupo">
-        <img src="img/css_old.svg" alt="CSS" class="habilidad-icon" />
-        <img src="img/javascript.svg" alt="JavaScript" class="habilidad-icon" />
-        <img src="img/typescript.svg" alt="TypeScript" class="habilidad-icon" />
-        <img src="img/nodejs.svg" alt="Node.js" class="habilidad-icon" />
-        <img src="img/Php_light.svg" alt="PHP" class="habilidad-icon" />
-        <img src="img/python.svg" alt="Python" class="habilidad-icon" />
-        <img src="img/sql-server.svg" alt="SQL Server" class="habilidad-icon" />
-        <img src="img/mysql-icon-dark.svg" alt="MySQL" class="habilidad-icon" />
-        <img src="img/mongodb-icon-dark.svg" alt="MongoDB" class="habilidad-icon" />
-        <img src="img/bootstrap.svg" alt="Bootstrap" class="habilidad-icon" />
-        <img src="img/astro-icon-dark.svg" alt="Astro" class="habilidad-icon" />
-      </div>
-
-      <!-- Herramientas y Entornos -->
-      <h3 class="habilidades-subtitulo">Herramientas y Entornos</h3>
-      <div class="habilidades-grupo">
-        <img src="img/git.svg" alt="Git" class="habilidad-icon" />
-        <img src="img/Github_light.svg" alt="GitHub" class="habilidad-icon" />
-        <img src="img/cursor_dark.svg" alt="Cursor" class="habilidad-icon" />
-        <img src="img/vscode.svg" alt="VS Code" class="habilidad-icon" />
-        <img src="img/visual-studio.svg" alt="Visual Studio" class="habilidad-icon" />
-        <img src="img/figma.svg" alt="Figma" class="habilidad-icon" />
-        <img src="img/slack.svg" alt="Slack" class="habilidad-icon" />
-        <img src="img/microsoft.svg" alt="Microsoft" class="habilidad-icon" />
-        <img src="img/microsoft-teams.svg" alt="Microsoft Teams" class="habilidad-icon" />
-        <img src="img/microsoft-onedrive.svg" alt="OneDrive" class="habilidad-icon" />
-        <img src="img/ibm.svg" alt="IBM" class="habilidad-icon" />
-      </div>
-    </div>
-  </section>
-
-  <!-- Botón flotante para enviar correo Gmail -->
-  <a href="mailto:urregosebastian462@gmail.com?subject=Consulta&body=Hola,%20quisiera%20más%20información."
-    class="gmail fab" target="_blank" rel="noopener noreferrer">
-    <i class="fa fa-envelope"></i>
-  </a>
-
-  <!-- Botón flotante para WhatsApp -->
-  <a href="https://wa.link/cwnsxu" class="whatsapp fab" target="_blank" rel="noopener noreferrer">
-    <i class="fa fa-whatsapp"></i>
-  </a>
-
-  <footer class="footer-custom text-center py-3">
-    <p class="mb-0">
-      © 2026 <strong>Sebastian Urrego</strong>. Todos los derechos reservados.
-    </p>
-  </footer>
-  <!-- Bootstrap JS para funcionalidades interactivas -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Script personalizado -->
-  <script src="js/script.js"></script>
-</body>
-
+    <!-- Script personalizado -->
+    <script src="js/script.js"></script>
+  </body>
 </html>

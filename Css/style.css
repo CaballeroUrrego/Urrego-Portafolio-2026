@@ -63,7 +63,11 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: #f1f5f9;
 }
 
@@ -94,7 +98,9 @@ a:hover {
 .navbar-dark .nav-link {
   color: #94a3b8;
   font-weight: 500;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease;
 }
 
 .navbar-dark .nav-link:hover {
@@ -196,14 +202,16 @@ h3.card-title {
 }
 
 /* Botón Primario (CV & LinkedIn) */
-.btn-cv, .btn-linkedin {
+.btn-cv,
+.btn-linkedin {
   background: linear-gradient(135deg, #2563eb, #3b82f6);
   color: #fff;
   border: 1px solid transparent;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
-.btn-cv:hover, .btn-linkedin:hover {
+.btn-cv:hover,
+.btn-linkedin:hover {
   background: transparent;
   border: 1px solid #3b82f6;
   color: #38bdf8;
@@ -225,7 +233,9 @@ h3.card-title {
   transform: translateY(-2px);
 }
 
-.btn-cv i, .btn-linkedin i, .btn-github i {
+.btn-cv i,
+.btn-linkedin i,
+.btn-github i {
   font-size: 1rem;
 }
 
@@ -234,7 +244,9 @@ h3.card-title {
     flex-direction: column;
     gap: 12px;
   }
-  .btn-cv, .btn-linkedin, .btn-github {
+  .btn-cv,
+  .btn-linkedin,
+  .btn-github {
     width: 85%;
     max-width: 280px;
   }
@@ -299,7 +311,31 @@ h3.card-title {
   padding: 80px 0;
 }
 
+/* Deshabilitar carrusel en móviles para volver al scroll vertical puro */
+@media (max-width: 767px) {
+  #experienciaCarousel .carousel-inner {
+    overflow: visible !important;
+  }
+  #experienciaCarousel .carousel-item {
+    display: block !important;
+    position: static !important;
+    opacity: 1 !important;
+    transition: none !important;
+    transform: none !important;
+    float: none !important;
+  }
+  #experienciaCarousel .carousel-indicators,
+  #experienciaCarousel .carousel-control-prev,
+  #experienciaCarousel .carousel-control-next {
+    display: none !important;
+  }
+}
+
 .experiencia h2 {
+  display: block; /* Ocupa todo el ancho */
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content; /* El truco: el bloque se ajusta al contenido y se centra */
   text-align: center;
   font-size: 2.3rem;
   font-weight: 700;
@@ -308,7 +344,6 @@ h3.card-title {
   text-transform: uppercase;
   margin-bottom: 60px;
   position: relative;
-  display: inline-block;
 }
 
 .experiencia h2::after {
@@ -322,9 +357,12 @@ h3.card-title {
 }
 
 .experiencia .card {
-  height: 100%;
   position: relative;
   overflow: hidden;
+}
+
+.experiencia .card-body {
+  flex-grow: 1;
 }
 
 .experiencia .card-title {
@@ -423,7 +461,7 @@ h3.card-title {
 .habilidad-icon {
   width: 50px;
   height: auto;
-  filter: grayscale(20%) drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+  filter: grayscale(20%) drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -434,30 +472,64 @@ h3.card-title {
 
 /* ===== ANIMACIONES GLOBALES ===== */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideUp {
-  from { opacity: 0; transform: translateY(25px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeUpIcon {
-  from { opacity: 0; transform: translateY(25px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ===== RESPONSIVE GLOBALES ===== */
 @media (max-width: 768px) {
-  .titulo-principal { font-size: 2.2rem; }
-  .subtitulo { font-size: 1.1rem; }
-  .experiencia h2, #habilidades h2 { font-size: 1.9rem; }
-  .habilidad-icon { width: 40px; margin: 10px; }
-  .habilidades-subtitulo { font-size: 1.2rem; }
+  .titulo-principal {
+    font-size: 2.2rem;
+  }
+  .subtitulo {
+    font-size: 1.1rem;
+  }
+  .experiencia h2,
+  #habilidades h2 {
+    font-size: 1.9rem;
+  }
+  .habilidad-icon {
+    width: 40px;
+    margin: 10px;
+  }
+  .habilidades-subtitulo {
+    font-size: 1.2rem;
+  }
 }
