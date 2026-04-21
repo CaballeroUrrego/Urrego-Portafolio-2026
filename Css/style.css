@@ -381,25 +381,28 @@ h3.card-title {
 }
 
 .experiencia .btn-outline-primary {
-  border: 1px solid rgba(56, 189, 248, 0.5);
-  color: #38bdf8;
+  /* Color principal: un azul eléctrico más sólido */
+  border: 1px solid #2563eb; 
+  color: #60a5fa;
   background-color: transparent;
   border-radius: 25px;
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
   padding: 8px 20px;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.5px;
 }
 
 .experiencia .btn-outline-primary:hover {
-  background-color: rgba(56, 189, 248, 0.1);
-  color: #38bdf8;
-  border-color: #38bdf8;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
+  /* Al pasar el mouse, el botón se llena con el degradado de tus títulos */
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  color: #ffffff; /* Texto blanco para mejor contraste sobre el azul */
+  border-color: transparent;
+  transform: translateY(-3px);
+  /* Sombra de brillo azul */
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
 }
-
 .experiencia .card::before {
   content: "";
   position: absolute;
