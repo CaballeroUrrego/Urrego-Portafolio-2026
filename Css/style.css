@@ -533,3 +533,61 @@ h3.card-title {
     font-size: 1.2rem;
   }
 }
+/* Estilos para la sección de Formación */
+.formacion-card {
+    background-color: #1e293b; /* Ajusta al color de tus otras cards */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    color: #f8fafc;
+}
+
+.formacion-subtitle {
+    color: #60a5fa;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.formacion-item h5 {
+    color: #f8fafc;
+    margin-bottom: 0.2rem;
+    font-size: 1.1rem;
+}
+
+.formacion-item p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+.divisor-vertical {
+    width: 1px;
+    background: linear-gradient(180deg, transparent, rgba(56, 189, 248, 0.3), transparent);
+    height: 100%;
+}
+
+.certificaciones-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.certificaciones-lista li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+/* El check azul para cada certificación */
+.certificaciones-lista li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.certificaciones-lista li strong {
+    color: #38bdf8;
+}
