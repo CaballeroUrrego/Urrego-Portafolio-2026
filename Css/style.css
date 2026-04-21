@@ -241,9 +241,9 @@ h3.card-title {
 /* ===== PRESENTACIÓN ===== */
 .presentacion {
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
   animation: fadeIn 1s ease-in-out;
 }
 
