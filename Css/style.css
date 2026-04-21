@@ -219,9 +219,11 @@ h3.card-title {
 
 /* BOTÓN GITHUB (Estilo Dark con Borde sutil) */
 .btn-github {
-    background-color: #1e293b;
-    color: #cbd5e1 !important;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+          background-color: #1e293b;
+          color: #cbd5e1 !important;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+          
 }
 
 .btn-github:hover {
