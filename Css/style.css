@@ -15,8 +15,8 @@
 }
 /* --- ESTILO PARA DESKTOP (PC) --- */
 .sobre-mi-imagen img {
-  width: 100%;           /* Que ocupe el ancho de su contenedor */
-  max-width: 380px;      /* Tamaño máximo en PC */
+  width: 100%; /* Que ocupe el ancho de su contenedor */
+  max-width: 380px; /* Tamaño máximo en PC */
   aspect-ratio: 1 / 1.2;
   object-fit: cover;
   border-radius: 15px;
@@ -29,12 +29,12 @@
 @media (max-width: 768px) {
   .sobre-mi-imagen img {
     /* Aquí la hacemos más pequeña */
-    width: 65%;          /* Bajamos el porcentaje para que se vea más chica */
-    max-width: 240px;    /* Reducimos el tope máximo en móvil */
-    margin: 0 auto;      /* Aseguramos que esté centrada */
-    
+    width: 65%; /* Bajamos el porcentaje para que se vea más chica */
+    max-width: 240px; /* Reducimos el tope máximo en móvil */
+    margin: 0 auto; /* Aseguramos que esté centrada */
+
     /* Opcional: bajar un poco el redondeado para que guarde proporción */
-    border-radius: 12px; 
+    border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
 }
@@ -190,63 +190,63 @@ h3.card-title {
 
 /* ===== CONTENEDOR DE BOTONES ===== */
 .btn-group-custom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px; /* Espacio uniforme entre botones */
-    margin-top: 35px;
-    flex-wrap: wrap; /* Para que en móviles se ajusten */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Espacio uniforme entre botones */
+  margin-top: 35px;
+  flex-wrap: wrap; /* Para que en móviles se ajusten */
 }
 
 /* ===== ESTILO BASE DE BOTONES ===== */
 .btn-linkedin,
 .btn-github,
 .btn-cv {
-    padding: 10px 22px; /* Relleno interno */
-    border-radius: 10px; /* Bordes ligeramente redondeados, como en la imagen */
-    font-weight: 800;    /* Fuente bien gruesa (Bold) */
-    font-size: 0.95rem; /* Tamaño de fuente */
-    text-transform: none; /* Mayúsculas/minúsculas naturales */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;            /* Espacio entre icono y texto */
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Transiciones suaves */
-    text-decoration: none;
-    border: none;
+  padding: 10px 22px; /* Relleno interno */
+  border-radius: 10px; /* Bordes ligeramente redondeados, como en la imagen */
+  font-weight: 800; /* Fuente bien gruesa (Bold) */
+  font-size: 0.95rem; /* Tamaño de fuente */
+  text-transform: none; /* Mayúsculas/minúsculas naturales */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Espacio entre icono y texto */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Transiciones suaves */
+  text-decoration: none;
+  border: none;
 }
 
 /* BOTONES CON DEGRADADO AZUL (LinkedIn y CV) */
 .btn-linkedin,
 .btn-cv {
-    /* Degradado de azul eléctrico a cyan */
-    background: linear-gradient(135deg, #2563eb 0%, #38bdf8 100%);
-    color: #ffffff !important;
-    /* Sombra base suave para dar profundidad */
-    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+  /* Degradado de azul eléctrico a cyan */
+  background: linear-gradient(135deg, #2563eb 0%, #38bdf8 100%);
+  color: #ffffff !important;
+  /* Sombra base suave para dar profundidad */
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
 }
 
 .btn-linkedin:hover,
 .btn-cv:hover {
-    transform: translateY(-2px); /* Pequeño salto hacia arriba */
-    /* Sombra de brillo (glow) más intensa al pasar el mouse */
-    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.6);
-    filter: brightness(1.1); /* Ligeramente más brillante */
+  transform: translateY(-2px); /* Pequeño salto hacia arriba */
+  /* Sombra de brillo (glow) más intensa al pasar el mouse */
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.6);
+  filter: brightness(1.1); /* Ligeramente más brillante */
 }
 
 /* BOTÓN GITHUB (Estilo Dark con Borde sutil) */
 .btn-github {
-    background-color: #1e293b; /* Color de fondo oscuro */
-    color: #cbd5e1 !important; /* Texto gris claro */
-    /* Borde muy fino y tenue */
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #1e293b; /* Color de fondo oscuro */
+  color: #cbd5e1 !important; /* Texto gris claro */
+  /* Borde muy fino y tenue */
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .btn-github:hover {
-    border-color: #38bdf8; /* Borde cyan al pasar el mouse */
-    color: #38bdf8 !important; /* Texto cyan */
-    /* Sombra de brillo sutil azulada */
-    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+  border-color: #38bdf8; /* Borde cyan al pasar el mouse */
+  color: #38bdf8 !important; /* Texto cyan */
+  /* Sombra de brillo sutil azulada */
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
 }
 
 @media (max-width: 576px) {
@@ -392,7 +392,7 @@ h3.card-title {
 
 .experiencia .btn-outline-primary {
   /* Color principal: un azul eléctrico más sólido */
-  border: 1px solid #2563eb; 
+  border: 1px solid #2563eb;
   color: #60a5fa;
   background-color: transparent;
   border-radius: 25px;
@@ -632,7 +632,6 @@ h3.card-title {
 .experiencia .card {
   margin-bottom: 20px !important; /* Ajusta este valor según tu preferencia */
 }
-/* Aqui  */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -642,4 +641,25 @@ h3.card-title {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ==========================================================================
+   INTERACTIVIDAD Y EFECTOS VISUALES - SEBASTIÁN URREGO
+   ========================================================================== */
+
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999; /* Prioridad máxima */
+}
+
+.progress-bar-scroll {
+  height: 4px;
+  background: #38bdf8; /* Tu azul característico */
+  width: 0%;
+  transition: width 0.1s ease-out;
 }
