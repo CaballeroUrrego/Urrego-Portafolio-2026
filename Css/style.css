@@ -178,25 +178,25 @@ h3.card-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 15px; /* Espacio uniforme entre botones */
     margin-top: 35px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Para que en móviles se ajusten */
 }
 
 /* ===== ESTILO BASE DE BOTONES ===== */
 .btn-linkedin,
 .btn-github,
 .btn-cv {
-    padding: 10px 22px;
-    border-radius: 10px; /* Bordes ligeramente redondeados según la imagen */
-    font-weight: 800;    /* Fuente gruesa para resaltar */
-    font-size: 0.95rem;
-    text-transform: none; /* Mantener mayúsculas/minúsculas naturales */
+    padding: 10px 22px; /* Relleno interno */
+    border-radius: 10px; /* Bordes ligeramente redondeados, como en la imagen */
+    font-weight: 800;    /* Fuente bien gruesa (Bold) */
+    font-size: 0.95rem; /* Tamaño de fuente */
+    text-transform: none; /* Mayúsculas/minúsculas naturales */
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    gap: 8px;            /* Espacio entre icono y texto */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Transiciones suaves */
     text-decoration: none;
     border: none;
 }
@@ -204,31 +204,33 @@ h3.card-title {
 /* BOTONES CON DEGRADADO AZUL (LinkedIn y CV) */
 .btn-linkedin,
 .btn-cv {
+    /* Degradado de azul eléctrico a cyan */
     background: linear-gradient(135deg, #2563eb 0%, #38bdf8 100%);
     color: #ffffff !important;
-    /* El brillo sutil alrededor del botón */
-    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+    /* Sombra base suave para dar profundidad */
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
 }
 
 .btn-linkedin:hover,
 .btn-cv:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
-    filter: brightness(1.1);
+    transform: translateY(-2px); /* Pequeño salto hacia arriba */
+    /* Sombra de brillo (glow) más intensa al pasar el mouse */
+    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.6);
+    filter: brightness(1.1); /* Ligeramente más brillante */
 }
 
 /* BOTÓN GITHUB (Estilo Dark con Borde sutil) */
 .btn-github {
-          background-color: #1e293b;
-          color: #cbd5e1 !important;
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-          
+    background-color: #1e293b; /* Color de fondo oscuro */
+    color: #cbd5e1 !important; /* Texto gris claro */
+    /* Borde muy fino y tenue */
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .btn-github:hover {
-    border-color: #38bdf8;
-    color: #38bdf8 !important;
+    border-color: #38bdf8; /* Borde cyan al pasar el mouse */
+    color: #38bdf8 !important; /* Texto cyan */
+    /* Sombra de brillo sutil azulada */
     box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
 }
 
