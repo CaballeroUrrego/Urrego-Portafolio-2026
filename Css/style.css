@@ -13,15 +13,30 @@
   justify-content: center;
   align-items: center;
 }
+/* --- ESTILO PARA DESKTOP (PC) --- */
 .sobre-mi-imagen img {
-  width: 50%;
-  max-width: 380px;
-  aspect-ratio: 1 1.2;
+  width: 100%;           /* Que ocupe el ancho de su contenedor */
+  max-width: 380px;      /* Tamaño máximo en PC */
+  aspect-ratio: 1 / 1.2;
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-  /* Brillo azul tenue para darle estilo tecnológico */
   border: 1px solid rgba(56, 189, 248, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* --- ESTILO PARA MOBILE (CELULARES) --- */
+@media (max-width: 768px) {
+  .sobre-mi-imagen img {
+    /* Aquí la hacemos más pequeña */
+    width: 65%;          /* Bajamos el porcentaje para que se vea más chica */
+    max-width: 240px;    /* Reducimos el tope máximo en móvil */
+    margin: 0 auto;      /* Aseguramos que esté centrada */
+    
+    /* Opcional: bajar un poco el redondeado para que guarde proporción */
+    border-radius: 12px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
 }
 
 /* ===== Botones de acción flotantes (FAB) ===== */
@@ -616,4 +631,15 @@ h3.card-title {
 }
 .experiencia .card {
   margin-bottom: 20px !important; /* Ajusta este valor según tu preferencia */
+}
+/* Aqui  */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
