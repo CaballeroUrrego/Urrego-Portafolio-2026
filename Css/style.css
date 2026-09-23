@@ -144,6 +144,26 @@ a:hover {
   border-color: rgba(56, 189, 248, 0.3);
 }
 
+.bg-orange {
+  background-color: #f97316 !important;
+  color: #111827 !important;
+}
+
+.astro-tech-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #111827;
+  border: 1px solid rgba(240, 65, 255, 0.65);
+  color: #f8fafc;
+}
+
+.astro-tech-badge img {
+  width: 16px;
+  height: 20px;
+  object-fit: contain;
+}
+
 h3.card-title {
   font-size: 1.4rem;
   margin: 0 auto 20px auto;
